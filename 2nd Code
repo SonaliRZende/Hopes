@@ -1,0 +1,41 @@
+//Write a function that takes 2 arguments as a input and return length of the building exposed to sunlight.
+
+
+Class Test
+{
+  
+  static int countBuilding(int n, Point bCoardinate )
+  {
+      int count=1;
+      int i=0
+      int curr_max= bCoardinate[0];
+      for(int i=1;i<n;i++)
+      {
+          if(bCoardinate[i]>curr_max)
+          {
+            count++
+            curr_max=bCoardinate[i];
+          }
+  }
+  return count;
+  
+  }
+  
+  Public static void main(String [] args)
+  {
+      Point bCoardinate= { new Point(4,0),
+                           new Point(4,-5),
+                           new Point(7,-5),
+                           new Point(7,0)
+                         }
+                         
+      
+      
+      
+      int n = bCoardinate.length();
+      
+      fun(n*4*2, bCoardinate);
+      System.out.println(countBuilding((n*4*2),bCoardinate)
+  }
+}
+
